@@ -41,8 +41,8 @@ export function getData(konum) {
     });
 }
 
-export function getData(konum, ilac) {
-    const reference = ref(db, konum + "/");
+export function getDataWilac(konum, ilac) {
+    const reference = ref(db, konum + "/" + ilac);
     onValue(reference, (snapshot) => {
         const data = snapshot.val();
         console.log(data);

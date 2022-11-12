@@ -1,0 +1,153 @@
+{
+	"compiler": {
+		"version": "0.8.4+commit.c7e474f2"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_index",
+						"type": "uint256"
+					}
+				],
+				"name": "getMapVeriler",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "alici",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "verici",
+								"type": "string"
+							},
+							{
+								"internalType": "bytes32",
+								"name": "aliciSha256",
+								"type": "bytes32"
+							},
+							{
+								"internalType": "bytes32",
+								"name": "vericiSha256",
+								"type": "bytes32"
+							},
+							{
+								"internalType": "bytes32",
+								"name": "eFaturaSha256",
+								"type": "bytes32"
+							},
+							{
+								"internalType": "bool",
+								"name": "valid",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct Compare.veriler",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getMapVerilerCount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_index",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_alici",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_verici",
+						"type": "string"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "_aliciSha256",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "_vericiSha256",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "_eFaturaSha256",
+						"type": "bytes32"
+					}
+				],
+				"name": "setMapVeriler",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contract.sol": "Compare"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contract.sol": {
+			"keccak256": "0x576e93ffed4d72b3b26752def9a35575af2aafc8de94198733252ac40906c3e3",
+			"license": "GPL-3.0-or-later",
+			"urls": [
+				"bzz-raw://ebba822221f6880af789569afac25379fc652e002bd459e0acca13ea4e6ff4d5",
+				"dweb:/ipfs/QmZHXm6MR1XLbbotzsRHrfgPseoFR1eA8e942X9x5QBbzB"
+			]
+		}
+	},
+	"version": 1
+}
