@@ -13,7 +13,9 @@ const __dirname = dirname(__filename);
 //how to using res.sendFile ?
 
 app.use('/assets', exprss.static(__dirname + '/assets'));
-app.use(exprss.static(__dirname + '/public'));
+app.use(exprss.static(__dirname + '/'));
+
+app.use("./", exprss.static(__dirname))
 
 
 app.use("/js", exprss.static('./assets/js/'));
@@ -23,6 +25,11 @@ app.use("/css", exprss.static('./assets/css/'));
 app.use("/img", exprss.static('./assets/img/'));
 app.get('/', (_req, res) => {
     res.sendFile(`${__dirname}/index.html`);
+
+});
+app.get('/newparadigm/doktor.html', (_req, res) => {
+    console.log("1");
+    res.sendFile(`${__dirname}/doktor.html`);
 
 });
 app.get('./main');
