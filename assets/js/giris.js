@@ -7,7 +7,7 @@ function validate() {
     var password = document.getElementById("password").value;
     if (username == "Formget" && password == "formget#123") {
         alert("Login successfully");
-        window.location = "./newparadigm/doktor.html"
+        window.location = "doktor.html"
         return false;
     }
     else {

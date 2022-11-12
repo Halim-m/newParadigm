@@ -40,6 +40,14 @@ export function getData(konum) {
         console.log(data);
     });
 }
+
+export function getData(konum, ilac) {
+    const reference = ref(db, konum + "/");
+    onValue(reference, (snapshot) => {
+        const data = snapshot.val();
+        console.log(data);
+    });
+}
 //update
 
 //delete
