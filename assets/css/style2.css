@@ -1,4 +1,13 @@
 /********** Template CSS **********/
+
+body /*Sayfa genel ayarları*/
+{
+margin: 0px;
+font-family:Arial, Helvetica, sans-serif;
+font-size: 12px;
+background-color: rgb(255, 255, 255);
+}
+
 :root {
     --primary: #13C5DD;
     --secondary: #354F8E;
@@ -82,8 +91,8 @@
 }
 
 .hero-header {
-    background: url() top right no-repeat;
-    background-size: cover;
+    background: url(/assets/img/idea_sized-kendal-l4ikccachoc-unsplash.jpg) top right no-repeat;
+    background-size: contain;
 }
 
 .service-item {
@@ -301,3 +310,7 @@ form {
       width: 100%;
     }
   }
+
+#ilacad{
+    position: relative;
+}

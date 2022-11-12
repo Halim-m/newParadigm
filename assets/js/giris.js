@@ -5,9 +5,16 @@ function validate() {
 
     var username = document.getElementById("username").value;
     var password = document.getElementById("password").value;
-    if (username == "Formget" && password == "formget#123") {
+    var s = document.getElementById('jobs');
+    var jobs = s.options[s.selectedIndex].value;
+    if (username == "Formget" && password == "formget#123" && jobs == "doktor") {
         alert("Login successfully");
         window.location = "doktor.html"
+        return false;
+    }
+    else if((username == "Formget" && password == "formget#125" && jobs == "Dagıtımcı")){
+        alert("Login successfully");
+        window.location = "Dagıtımcı.html"
         return false;
     }
     else {
@@ -21,15 +28,7 @@ function validate() {
             return false;
         }
     }
-
-
-
 }
-
-
-
-
-
 
 
 
