@@ -2,8 +2,7 @@ import exprss from "express";
 import { fileURLToPath } from "url";
 import { dirname } from "path";
 
-import { writePills } from "./assets/firebaseHelper.js";
-import { write } from "fs";
+import { getAll, writePills, getData } from "./assets/firebaseHelper.js";
 
 const app = exprss();
 const __filename = fileURLToPath(import.meta.url);
@@ -20,4 +19,6 @@ app.get('./main');
 const server = app.listen(4000);
 console.log(server.address().port);
 
-writePills("eczane adı1", "ilaç adı1", "adet1");
+
+//getAll();
+getData("konum");

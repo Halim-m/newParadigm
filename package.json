@@ -15,5 +15,13 @@
     "firebase": "^9.14.0"
   },
   "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Halim-m/newParadigm.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Halim-m/newParadigm/issues"
+  },
+  "homepage": "https://github.com/Halim-m/newParadigm#readme",
   "description": ""
 }

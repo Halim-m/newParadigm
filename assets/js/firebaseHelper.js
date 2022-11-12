@@ -20,14 +20,12 @@ const db = getDatabase(dbApp);
 
 //create
 export function writePills(ecz, id, pills) {
-    const db = getDatabase(dbApp);
     const reference = ref(db, ecz + "/" + id);
-    set(reference, pills)
+    set(reference, pills);
 }
 //read
 export function getAll() {
-    const db = getDatabase();
-    const reference = ref(db, 'yorum/');
+    const reference = ref(db);
     onValue(reference, (snapshot) => {
         const data = snapshot.val();
         console.log(data);
@@ -35,6 +33,13 @@ export function getAll() {
     });
 }
 
+export function getData(konum) {
+    const reference = ref(db, konum + "/");
+    onValue(reference, (snapshot) => {
+        const data = snapshot.val();
+        console.log(data);
+    });
+}
 //update
 
 //delete
