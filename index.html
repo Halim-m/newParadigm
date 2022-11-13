@@ -7,74 +7,85 @@
 
 
 
+
+
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/giris.css" rel="stylesheet">
 
     <link href="assets/css/style.css" rel="stylesheet">
     <script src="assets/js/giris.js"></script>
     <link href="assets/css/buton.css" rel="stylesheet">
-    <script type="text/javascript" src="/index.js"></script>
-    <script type="module" src="/getEthData.js"></script>
+
+
+
 </head>
 
 
 <body>
 
-    <!-- Navbar Start -->
-    <div class="container-fluid sticky-top bg-white shadow-sm">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0">
-                <a href="index.html" class="navbar-brand">
-                    <h1 class="m-0 text-uppercase text-primary"><i class="fa fa-clinic-medical me-2"></i>NewParadigm
-                    </h1>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto py-0">
 
-                        <div class="nav-item dropdown">
+    <div class="container right-panel-active">
+        <!-- Sign Up -->
+        <div class="container__form container--signup">
+            <form action="#" class="form" id="form1">
 
-                            <div class="dropdown-menu m-0">
+                <label for="jobs">seç:</label>
+                <select name="jobs" id="jobs">
+                    <option value="doktor">Doktor</option>
+                    <option value="Dagıtımcı">Dağıtımcı</option>
 
-                            </div>
-                        </div>
+                </select>
 
-                    </div>
-                </div>
-            </nav>
+                <input type="text" placeholder="User" class="input" id="username" />
+                <input type="password" placeholder="Password" class="input" id="password" />
+
+
+            </form>
+
         </div>
-    </div>
-    <!-- Navbar End -->
 
-    <!-- Hero Start -->
-    <div class="container-fluid bg-primary py-5 mb-5 hero-header">
-        <div class="container py-5">
-            <div class="row justify-content-start">
-                <div class="col-lg-8 text-center text-lg-start">
-                    <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5"
-                        style="border-color: rgba(256, 256, 256, .3) !important;">NewParadigm</h5>
-                    <h1 class="display-1 text-white mb-md-4">En İyi Sağlık Çözümleri</h1>
+
+
+        <!-- Sign In -->
+
+
+        <!-- Overlay -->
+        <div class="container__overlay">
+            <div class="overlay">
+                <div class="overlay__panel overlay--left">
+                    <button class="btn" value="Login" id="submit" onclick="validate()">Sign In</button>
+                </div>
+                <div class="overlay__panel overlay--right">
+
                 </div>
             </div>
         </div>
     </div>
 
+
+
+
+
+    <!-- Navbar Start -->
+
+    <!-- Navbar End -->
+
+    <!-- Hero Start -->
+
+
     <br>
     <br>
-    <div class="container2">
 
-        <button type="button" onclick="redirectToDoc()">Distributor Girisi</button>
-        <button type="button" onclick="getTokenInfo()">Doktor Girisi</button>
+
+
+
     </div>
 
-    </div>
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/giris.js"></script>
+    <script src="/assets/js/contract.js" type="module"></script>
 
 
-    <script type="module" , src="/assets/js/main.js"></script>
-    <script type="module" , src="/assets/js/giris.js"></script>
-    <script type="module" , src="/assets/js/contract.js"></script>
 
 
 </body>

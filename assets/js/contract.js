@@ -111,12 +111,22 @@ const abi = [
 ];
 const CONTRACT_ADDRESS = "0x796272c5CCbd464a0Adba6438B0adeAe9995b256";
 
-export const getTokenInfo = async () => {
-    /*const provider = new ethers.providers.Web3Provider(window.ethereum);
+export const getData = async (dataIndex) => {
+    const provider = new ethers.providers.Web3Provider(window.ethereum);
     const ct = new ethers.Contract(CONTRACT_ADDRESS, abi, provider);
 
-    const tokenName = await ct.getMapVeriler(0);
-    console.log(tokenName);*/
+    const tokenName = await ct.getMapVeriler(dataIndex);
+    console.log(tokenName);
+    console.log("test");
+
+};
+
+export const set = async (dataIndex, getter, setter, getterHash, setterHash, eFaturaHash) => {
+    const provider = new ethers.providers.Web3Provider(window.ethereum);
+    const ct = new ethers.Contract(CONTRACT_ADDRESS, abi, provider);
+
+    const tokenName = await ct.setMapVeriler(dataIndex, getter, setter, getterHash, setterHash, eFaturaHash);
+    console.log(tokenName);
     console.log("test");
 
 };

@@ -1,9 +1,8 @@
 import exprss from "express";
 import { fileURLToPath } from "url";
 import { dirname } from "path";
-import { getTokenInfo } from "./assets/js/contract.js";
 
-import { getAll, writePills, getData } from "./assets/js/firebaseHelper.js";
+
 
 const app = exprss();
 const __filename = fileURLToPath(import.meta.url);
@@ -40,6 +39,4 @@ const server = app.listen(4000);
 console.log(server.address().port);
 
 
-//getAll();
-getData("konum");
-getTokenInfo();
+
