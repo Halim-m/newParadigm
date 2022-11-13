@@ -3,7 +3,6 @@ import { fileURLToPath } from "url";
 import { dirname } from "path";
 
 
-
 const app = exprss();
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -37,6 +36,5 @@ app.get('/newparadigm/doktor.html', (_req, res) => {
 app.get('./main');
 const server = app.listen(4000);
 console.log(server.address().port);
-
 
 

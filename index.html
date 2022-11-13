@@ -8,14 +8,17 @@
 
 
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/giris.css" rel="stylesheet">
 
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/css/giris.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
 
-    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="../css/buton.css" rel="stylesheet">
+
+    <script src="main.js"></script>
     <script src="assets/js/giris.js"></script>
-    <link href="assets/css/buton.css" rel="stylesheet">
-
+    <script src="contract.js"></script>
 
 
 </head>
@@ -53,7 +56,7 @@
         <div class="container__overlay">
             <div class="overlay">
                 <div class="overlay__panel overlay--left">
-                    <button class="btn" value="Login" id="submit" onclick="validate()">Sign In</button>
+                    <button class="btn" value="Login" id="submit" onclick="(validate())">Sign In</button>
                 </div>
                 <div class="overlay__panel overlay--right">
 
@@ -81,11 +84,16 @@
 
     </div>
 
-    <script src="/assets/js/main.js"></script>
-    <script src="/assets/js/giris.js"></script>
-    <script src="/assets/js/contract.js" type="module"></script>
 
-
+    <!--<script type="module">
+        import { getData } from "contract.js"
+    </script> 
+    <script>
+        function getData() {
+            console.log("aa");
+        }
+    </script>
+-->
 
 
 </body>

@@ -1,4 +1,6 @@
 import ethers from "ethers";
+import { keccak256 } from "ethers/lib/utils";
+import { Keccak } from "keccak";
 
 const abi = [
     {
@@ -111,7 +113,9 @@ const abi = [
 ];
 const CONTRACT_ADDRESS = "0x796272c5CCbd464a0Adba6438B0adeAe9995b256";
 
-export const getData = async (dataIndex) => {
+
+export const getContractData = async (dataIndex) => {
+    debugger;
     const provider = new ethers.providers.Web3Provider(window.ethereum);
     const ct = new ethers.Contract(CONTRACT_ADDRESS, abi, provider);
 
@@ -121,7 +125,7 @@ export const getData = async (dataIndex) => {
 
 };
 
-export const set = async (dataIndex, getter, setter, getterHash, setterHash, eFaturaHash) => {
+export const setContractData = async (dataIndex, getter, setter, getterHash, setterHash, eFaturaHash) => {
     const provider = new ethers.providers.Web3Provider(window.ethereum);
     const ct = new ethers.Contract(CONTRACT_ADDRESS, abi, provider);
 
@@ -130,3 +134,12 @@ export const set = async (dataIndex, getter, setter, getterHash, setterHash, eFa
     console.log("test");
 
 };
+
+function createKeccak(data) {
+    hash = createKeccakHash('keccak256').update(data).digest('hex');
+    return hash;
+}
+
+/*ornek set func
+*/
+
