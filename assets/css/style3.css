@@ -166,7 +166,7 @@ body {
 	transition: transform 80ms ease-in;
 }
 
-.form > .btn {
+.form>.btn {
 	margin-top: 1.5rem;
 }
 
@@ -198,6 +198,7 @@ body {
 }
 
 @keyframes show {
+
 	0%,
 	49.99% {
 		opacity: 0;
@@ -210,18 +211,21 @@ body {
 		z-index: 5;
 	}
 }
-h4{
-    color: #ffffff;
-}
-.ilacgiris{
-    color: #008997;
-    position:relative;
-    font-size: 20px;
 
-
+h4 {
+	color: #ffffff;
 }
 
-.butonnn{
-    color: #008997;
-    font-size: 20px;
+.ilacgiris {
+	color: #008997;
+	position: relative;
+	font-size: 20px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+}
+
+.butonnn {
+	color: #008997;
+	font-size: 20px;
 }
