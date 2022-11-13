@@ -13,11 +13,12 @@
     <link href="assets/css/style.css" rel="stylesheet">
     <script src="assets/js/giris.js"></script>
     <link href="assets/css/buton.css" rel="stylesheet">
+    <script type="text/javascript" src="/index.js"></script>
+    <script type="module" src="/getEthData.js"></script>
 </head>
 
 
 <body>
-
 
     <!-- Navbar Start -->
     <div class="container-fluid sticky-top bg-white shadow-sm">
@@ -47,8 +48,8 @@
     </div>
     <!-- Navbar End -->
 
-     <!-- Hero Start -->
-     <div class="container-fluid bg-primary py-5 mb-5 hero-header">
+    <!-- Hero Start -->
+    <div class="container-fluid bg-primary py-5 mb-5 hero-header">
         <div class="container py-5">
             <div class="row justify-content-start">
                 <div class="col-lg-8 text-center text-lg-start">
@@ -62,37 +63,18 @@
 
     <br>
     <br>
-
-    <label for="jobs">seç:</label>
-    <select name="jobs" id="jobs">
-    <option value="doktor">Doktor</option>
-    <option value="Dagıtımcı">Dağıtımcı</option>
-  
-    </select>
-
     <div class="container2">
-        
 
-            <form id="form_id" method="post" name="myform">
-                <label>User Name :</label>
-                <input type="text" name="username" id="username" />
-                <br>
-                <label>Password :</label>
-                <input type="password" name="password" id="password" />
-                <br>
-                <input type="button" value="Login" id="submit" onclick="validate()" />
-            </form>
-            <span><b class="note">Note : </b>For this demo use following username and password. <br /><b
-                    class="valid">User Name : Formget<br />Password : formget#123</b></span>
-        
+        <button type="button" onclick="redirectToDoc()">Distributor Girisi</button>
+        <button type="button" onclick="getTokenInfo()">Doktor Girisi</button>
     </div>
 
     </div>
 
-    <script src="/assets/js/main.js"></script>
-    <script src="/assets/js/giris.js"></script>
 
-
+    <script type="module" , src="/assets/js/main.js"></script>
+    <script type="module" , src="/assets/js/giris.js"></script>
+    <script type="module" , src="/assets/js/contract.js"></script>
 
 
 </body>
